@@ -1,0 +1,63 @@
+﻿@model DBFirst.Models.Customer
+
+@{
+    Layout = null;
+}
+
+<<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Index</title>
+
+</head>
+
+<body>
+
+    <fieldset>
+
+        <legend>EmployeeDetail</legend>
+
+        <div class="display-label">
+
+            @Html.DisplayNameFor(model => model.Fname)
+
+        </div>
+
+        <div class="display-field">
+
+            @Html.DisplayFor(model => model.Fname)
+
+        </div>
+
+        <div class="display-label">
+
+            @Html.DisplayNameFor(model => model.Lname)
+
+        </div>
+
+        <div class="display-field">
+
+            @Html.DisplayFor(model => model.Lname)
+
+        </div>
+
+        
+
+    </fieldset>
+
+    <p>
+
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+
+        @Html.ActionLink("Back to List", "Index")
+
+    </p>
+
+</body>
+
+</html>
